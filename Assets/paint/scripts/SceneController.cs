@@ -41,6 +41,8 @@ public class SceneController : MonoBehaviour
     public AudioClip heatSound;
 
     public AudioClip bgMusic;
+
+    public AudioClip btnMusic;
     
     // Start is called before the first frame update
     void Start()

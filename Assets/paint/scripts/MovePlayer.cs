@@ -112,7 +112,7 @@ public class MovePlayer : MonoBehaviour
 
             transform.position = Vector3.Lerp(_startPosition, end.position, i / 100f);
 
-            transform.LookAt(end.position + Vector3.forward * 10);
+            transform.LookAt(end.position);
         }
 
         yield return new WaitForSeconds(1f);
@@ -136,7 +136,7 @@ public class MovePlayer : MonoBehaviour
         _animator.Play("Idle");
         var helloMsg = helloMessages[Random.Range(0, helloMessages.Count)];
         helloMsg.SetActive(true);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
         helloMsg.SetActive(false);
 
         selectBar.SetActive(true);

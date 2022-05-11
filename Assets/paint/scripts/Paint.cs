@@ -139,7 +139,7 @@ namespace EasyGameStudio.paint
             if (spray)
             {
                 spray.SetActive(true);
-                spray.transform.position = new Vector3(hit.point.x, hit.point.y - 5, 4);// hit.point - Vector3.back * 2f + Vector3.down * 0.5f;
+                spray.transform.position = new Vector3(hit.point.x, hit.point.y - 4, 4);// hit.point - Vector3.back * 2f + Vector3.down * 0.5f;
                 //spray.transform.LookAt(hit.point);
                 spray.transform.rotation = Quaternion.Euler(20, 180f, spray.transform.rotation.z);
             }

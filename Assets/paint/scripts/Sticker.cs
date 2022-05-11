@@ -16,6 +16,7 @@ public class Sticker : MonoBehaviour
         _sticker = GetComponent<Image>().sprite;
         _button.onClick.AddListener(() =>
         {
+            SceneController.instance.AudioSource.PlayOneShot(SceneController.instance.btnMusic);
             StickerChooser.instance.currentSticker = _sticker;
             Demo_control.instance.currentActiveGameObject.GetComponent<StickerPaint>().currentSticker = null;
             var stickers = StickerChooser.instance.stickers;
